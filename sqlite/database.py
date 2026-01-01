@@ -67,7 +67,7 @@ items = cursor.fetchall()
 
 # print("Data fetched successfully")
 
-# Primary key
+# Primary key id
 
 # unique id num in db of items
 
