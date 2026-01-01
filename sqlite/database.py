@@ -31,25 +31,25 @@ cursor = connect.cursor()
 
 # Insert Many data
 
-# many_cust = [
-#     (
-#         'test1', 'test1', 'test1@test.com'
-#     ),
-#     (
-#         'test2', 'test2', 'test2@test.com'
-#     ),
-#     (
-#         'test3', 'test3', 'test3@test.com'
-#     ),
-#     (
-#         'test4', 'test4', 'test4@test.com'
-#     )
+many_cust = [
+    (
+        'test1', 'test1', 'test1@test.com'
+    ),
+    (
+        'test2', 'test2', 'test2@test.com'
+    ),
+    (
+        'test3', 'test3', 'test3@test.com'
+    ),
+    (
+        'test4', 'test4', 'test4@test.com'
+    )
 
-# ]
+]
 
-# cursor.executemany("INSERT INTO customers1 VALUES (?,?,?)", many_cust)
+cursor.executemany("INSERT INTO customers VALUES (?,?,?)", many_cust)
 
-# print("Data inserted successfully")
+print("Data inserted successfully")
 
 # Quary the Database
 
